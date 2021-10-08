@@ -1,0 +1,82 @@
+<?php
+$arr11=array(
+    array('country','bangladesh','india','nepal','srilangka'),
+    array('capital','dhaka','new delhi','kathmandu','Sri Jayawardenepura Kotte'),
+    array('currency','taka','rupee','Nepalese rupee','Sri Lankan rupee')
+);
+for($i=0; $i<3; $i++){
+    for($j=0; $j<4; $j++)
+        echo $arr11[$i][$j].'<br>';
+        echo "<br>";
+}
+
+function add(){
+    $a=54;
+    $b=34;
+    echo $a+$b;
+}
+ add();
+echo "<br>";    //no pass no return ,non global/local variable
+echo "<br>";
+
+$c=56;
+$d=23;
+function addition($c,$d){
+    echo ($c+$d);
+}
+addition($c,$d);
+ echo "<br>";    //yes pass, no return. global variable
+ echo "<br>";
+
+$ar11 = array(
+    array(1,2,3,4),
+    array(5,6,7,8),
+    array(9,10,11,12),);
+
+$ar22 = array(
+    array(12,11,10,9),
+    array(8,7,6,5),
+    array(4,3,2,1),);
+
+for($i=0; $i<3; $i++){
+    for($j=0; $j<4; $j++){
+            $ar33[$i][$j] = $ar11[$i][$j] * $ar22[$i][$j];
+            echo $ar33[$i][$j];
+    }
+    echo"<br>";
+    echo "<br>";
+}              //matrix multiply
+echo "<br>";
+
+for($i=0; $i<3; $i++){
+    for($j=0; $j<4; $j++){
+           $ar44[$i][$j] = $ar11[$i][$j] - $ar22[$i][$j];
+           echo $ar44[$i][$j];
+    }
+    echo"<br>";
+    echo "<br>";
+}             // matrix Subtraction
+echo "<br>";
+
+for($i=0; $i<3; $i++){
+    for($j=0; $j<4; $j++){
+     $ar55[$i][$j] = $ar11[$i][$j] / $ar22[$i][$j];
+     echo $ar55[$i][$j] . " ";
+    }
+    echo"<br>";
+    echo "<br>";
+}            //matrix division
+echo "<br>";
+
+$question5= <<<relation
+examples of one to one relations: <br>
+  1.one nid for each person        <br>
+  2.one ip address refers to only one device <br>
+  3.one serial number related to only one product <br>
+  4.one variable refers to only one value  <br>
+  5.every person has different fingerprint, so one fingerprint refers to only one person <br>
+
+relation;
+echo $question5."<br>";
+
+?>
